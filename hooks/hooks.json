@@ -1,0 +1,20 @@
+{
+  "description": "Discover GitHub-backed Codex skills at session start and cache only confirmed user/legacy sources; project sources remain discovery-only.",
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "^(startup|resume)$",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"$PLUGIN_ROOT/skills/manage-github-skills/scripts/session_start.py\"",
+            "commandWindows": "powershell.exe -NoProfile -ExecutionPolicy Bypass -File \"%PLUGIN_ROOT%\\hooks\\session_start.ps1\"",
+            "timeout": 60,
+            "statusMessage": "Discovering GitHub-backed Codex skills",
+            "additionalContextLimit": 1200
+          }
+        ]
+      }
+    ]
+  }
+}

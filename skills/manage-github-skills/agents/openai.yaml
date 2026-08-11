@@ -1,0 +1,8 @@
+interface:
+  display_name: "Codex GitHub Skill Manager"
+  short_description: "Discover, clone, update, migrate, and audit GitHub-backed Codex skills"
+  default_prompt: "Discover my GitHub-backed Codex skills, repair tracking when safe, and update them after a dry run."
+policy:
+  products:
+    - CODEX
+  allow_implicit_invocation: true

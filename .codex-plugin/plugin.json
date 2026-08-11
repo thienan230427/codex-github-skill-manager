@@ -1,0 +1,27 @@
+{
+  "name": "codex-github-skill-manager",
+  "version": "0.0.1",
+  "description": "Discover, clone-cache, migrate, update, and audit GitHub-hosted Codex Agent Skills.",
+  "author": {
+    "name": "Project contributors"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Codex GitHub Skill Manager",
+    "shortDescription": "Manage GitHub-backed skills",
+    "longDescription": "Discover installed GitHub-backed Codex Agent Skills, cache missing source repositories, safely migrate legacy copies, update tracked skills on request, and audit skill discovery metadata.",
+    "developerName": "Project contributors",
+    "category": "Developer Tools",
+    "capabilities": [
+      "Discover GitHub skill sources",
+      "Clone and cache source repositories",
+      "Migrate legacy Codex skills",
+      "Update and audit Codex skills"
+    ],
+    "defaultPrompt": [
+      "Discover my GitHub-backed Codex skills.",
+      "Update all my GitHub-backed Codex skills safely.",
+      "Migrate my legacy Codex skills and audit them."
+    ]
+  }
+}

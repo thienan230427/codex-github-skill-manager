@@ -1,0 +1,20 @@
+{
+  "name": "codex-github-skill-manager",
+  "interface": {
+    "displayName": "Codex GitHub Skill Manager"
+  },
+  "plugins": [
+    {
+      "name": "codex-github-skill-manager",
+      "source": {
+        "source": "local",
+        "path": "."
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
+    }
+  ]
+}
